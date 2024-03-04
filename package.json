@@ -5,5 +5,17 @@
     "express-handlebars": "^7.1.2",
     "mysql2": "^3.9.2",
     "sequelize": "^6.37.1"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "name": "brocksblog",
+  "description": "This is a blog where I write about interesting topics on tech, and how I've been learning to code. I'm a self-taught developer, and I'm currently learning HTML, CSS, and JavaScript for Full Stack Web Development.",
+  "version": "1.0.0",
+  "main": "server.js",
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
 }
