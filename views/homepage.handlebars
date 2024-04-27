@@ -1,0 +1,17 @@
+{{! Homepage}}
+<section class="'homepage">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h1>Welcome to the homepage</h1>
+      </div>
+    </div>
+  </div>
+  <section class="dashboard">
+    <div class="posts">
+      {{#each posts}}
+        {{> homePostDetails}}
+      {{/each}}
+    </div>
+  </section>
+</section>
