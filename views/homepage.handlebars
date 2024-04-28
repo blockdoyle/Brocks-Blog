@@ -1,17 +1,17 @@
 {{! Homepage}}
-<section class="'homepage">
+<section class="homepage">
   <div class="container">
     <div class="row">
       <div class="col-md-12">
         <h1>Welcome to the homepage</h1>
       </div>
+      <section class="d-flex justify-content-center">
+        <div class="posts">
+          {{#each posts}}
+            {{> homePostDetails}}
+          {{/each}}
+        </div>
+      </section>
     </div>
   </div>
-  <section class="dashboard">
-    <div class="posts">
-      {{#each posts}}
-        {{> homePostDetails}}
-      {{/each}}
-    </div>
-  </section>
 </section>
