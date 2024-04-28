@@ -30,4 +30,16 @@ router.get("/", async (req, res) => {
   }
 });
 
+// GET route for login
+router.get("/login", (req, res) => {
+  // If the user is already logged in, redirect to homepage
+  if (req.session.logged_in) {
+    res.redirect("/");
+    return;
+  }
+
+  // Otherwise, render the 'login' template
+  res.render("login");
+});
+
 module.exports = router;
